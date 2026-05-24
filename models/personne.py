@@ -39,13 +39,13 @@ class Personne:
         if len(nouveau_numero) >= 8:
             self.__telephone = nouveau_numero
         else:
-            print("❌ Numéro de téléphone invalide.")
+            print("❌ Invalid phone number.")
 
     def afficher_infos(self) -> None:
         """Affiche les informations de la personne. Méthode surchargée dans les classes enfants."""
-        print(f"Nom : {self.prenom} {self.nom}")
-        print(f"Téléphone : {self.__telephone}")
-        print(f"Pays : {self.PAYS}")
+        print(f"Name : {self.prenoun} {self.name}")
+        print(f"Phone : {self.__phone}")
+        print(f"Country : {self.country}")
 
     def __str__(self) -> str:
         """Représentation textuelle de la personne."""

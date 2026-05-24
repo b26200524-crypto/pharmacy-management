@@ -56,11 +56,11 @@ def afficher_stock(medicaments: list) -> None:
         medicaments: Liste des médicaments à afficher.
     """
     if not medicaments:
-        print("⚠️  Le stock est vide.")
+        print("⚠️  Stock is empty.")
         return
 
     print("\n" + "=" * 45)
-    print("         📦 STOCK DES MÉDICAMENTS")
+    print("         📦 Medecine stock")
     print("=" * 45)
 
     for med in medicaments:
@@ -78,7 +78,7 @@ def afficher_alertes(medicaments: list) -> None:
     """
     alertes = False
 
-    print("\n🔔 ALERTES :")
+    print("\n🔔 ALERTS :")
     for med in medicaments:
         if med.est_expire():
             print(f"  ⚠️  {med.nom} est EXPIRÉ !")
@@ -88,7 +88,7 @@ def afficher_alertes(medicaments: list) -> None:
             alertes = True
 
     if not alertes:
-        print("  ✅ Aucune alerte. Tout est en ordre.")
+        print("  ✅ No alets. Everything is fine.")
 
 
 def rechercher_medicament(medicaments: list, nom: str):

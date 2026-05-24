@@ -38,10 +38,10 @@ class Client(Personne):
     def afficher_historique(self) -> None:
         """Affiche l'historique complet des achats du client."""
         if not self.historique:
-            print("Aucun achat enregistré.")
+            print("No purchases recorded.")
             return
 
-        print(f"\n📋 Historique de {self.prenom} {self.nom} :")
+        print(f"\n📋 History of {self.prenom} {self.nom} :")
         for i, achat in enumerate(self.historique, 1):
             print(f"  {i}. {achat['medicament']} - {achat['quantite']} unité(s) - {achat['date']}")
 
@@ -51,10 +51,10 @@ class Client(Personne):
         Surcharge la méthode de la classe Personne.
         """
         print(f"\n👤 CLIENT")
-        print(f"  Nom     : {self.prenom} {self.nom}")
-        print(f"  Tél     : {self.get_telephone()}")
+        print(f"  Name    : {self.prenom} {self.nom}")
+        print(f"  Phone    : {self.get_telephone()}")
         print(f"  Email   : {self.email}")
-        print(f"  Achats  : {len(self.historique)} commande(s)")
+        print(f"  purchases  : {len(self.historique)} orders(s)")
 
     def __str__(self) -> str:
         """Représentation textuelle du client."""

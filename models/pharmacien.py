@@ -39,11 +39,11 @@ class Pharmacien(Personne):
         Affiche les infos du pharmacien. (Polymorphisme)
         Surcharge la méthode de la classe Personne.
         """
-        print(f"\n👨‍⚕️ PHARMACIEN")
-        print(f"  Nom        : {self.prenom} {self.nom}")
-        print(f"  Tél        : {self.get_telephone()}")
-        print(f"  Matricule  : {self.__matricule}")
-        print(f"  Ventes     : {self.ventes_effectuees}")
+        print(f"\n👨‍⚕️ PHARMACIst")
+        print(f"  Name       : {self.prenom} {self.nom}")
+        print(f"  Phone        : {self.get_telephone()}")
+        print(f"  ID  : {self.__matricule}")
+        print(f"  Sales     : {self.ventes_effectuees}")
 
     def __str__(self) -> str:
         """Représentation textuelle du pharmacien."""

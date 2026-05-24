@@ -64,7 +64,7 @@ class Medicament:
         """
         self.__quantite += quantite
 
-    def est_expire(self) -> bool:
+    def est_expired(self) -> bool:
         """
         Vérifie si le médicament est expiré.
 
@@ -83,13 +83,13 @@ class Medicament:
 
     def afficher(self) -> None:
         """Affiche les informations complètes du médicament."""
-        statut_exp = "⚠️ EXPIRÉ" if self.est_expire() else "✅ Valide"
-        statut_stock = "🔴 Stock bas" if self.stock_bas() else "🟢 En stock"
+        statut_exp = "⚠️ EXPIRED" if self.est_expired() else "✅ Valid"
+        statut_stock = "🔴 LOW stock" if self.low- stock() else "🟢 in stock"
 
         print(f"\n  💊 {self.nom}")
-        print(f"     Catégorie   : {self.categorie}")
-        print(f"     Prix        : {self.__prix} FCFA")
-        print(f"     Quantité    : {self.__quantite} unité(s) — {statut_stock}")
+        print(f"     Catégory   : {self.category}")
+        print(f"     Price       : {self.__price} FCFA")
+        print(f"     Quantity    : {self.__quantity} unité(s) — {statut_stock}")
         print(f"     Expiration  : {self.date_expiration} — {statut_exp}")
 
     def vers_csv(self) -> str:

@@ -28,7 +28,7 @@ def enregistrer_vente(medicament: Medicament, client: Client,
     """
     # Vérifier si la vente est possible
     if not medicament.reduire_stock(quantite):
-        print(f"❌ Stock insuffisant pour {medicament.nom}.")
+        print(f"❌ Insufficient stock pour {medicament.nom}.")
         return False
 
     # Calculer le total
@@ -57,22 +57,22 @@ def enregistrer_vente(medicament: Medicament, client: Client,
                  f"Pharmacien : {pharmacien}\n")
         fichier.write(ligne)
 
-    print(f"\n✅ Vente enregistrée !")
-    print(f"   Médicament : {medicament.nom}")
-    print(f"   Quantité   : {quantite}")
+    print(f"\n✅ sale recorded !")
+    print(f"   Médicine : {medicine.nom}")
+    print(f"   Quantity  : {quantity}")
     print(f"   Total      : {total} FCFA")
 
     return True
 
 
 def afficher_historique() -> None:
-    """Lit et affiche l'historique complet des ventes depuis le fichier."""
+    """Lit et affiche sales history depuis le fichier."""
     try:
         with open(FICHIER_HISTORIQUE, "r", encoding="utf-8") as fichier:
             lignes = fichier.readlines()
 
         if not lignes:
-            print("Aucune vente enregistrée.")
+            print("No sales recorded.")
             return
 
         print("\n" + "=" * 55)
@@ -86,4 +86,4 @@ def afficher_historique() -> None:
         print(f"  Total : {len(lignes)} vente(s) enregistrée(s).")
 
     except FileNotFoundError:
-        print("Aucun historique disponible.")
+        print("No history available.")
