@@ -2,10 +2,9 @@
 system of management of pharmacy -BIT programming
 Name | GitHub |
 |---|---|
-| OUEDRAOGO Kiswendsida Cedric | [@username](https://github.com/username) |
+| OUEDRAOGO Kiswendsida Cedric | [@dricestone-hue](https://github.com/dricestone-hue) |
 | PARE Eunice Leslie | [@0ri0niX](https://github.com/0ri0niX) |
-| PALE Brice Abraham | [@username](https://github.com/username) |
-| KABORE Souleymane | [@username](https://github.com/username) |
-| SAWADOGO Abdoul Ahmad | [@username](https://github.com/username) |
-| SIDIBE Hamdiya | [@username](https://github.com/username) |
-| GUISSOU Faosia Leilatou | [@username](https://github.com/username) |
+| PALE Brice Abraham | [@briceabrahampale](https://github.com/briceabrahampale) |
+| KABORE Souleymane | [@LionelXV](https://github.com/LionelXV) |
+| SIDIBE Hamdiya | [@hamdiyasidibe-ux](https://github.com/hamdiyasidibe-ux) |
+| GUISSOU Faosia Leilatou | [@faosiaguissou](https://github.com/faosiaguissou) |
